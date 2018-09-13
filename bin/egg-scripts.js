@@ -6,7 +6,7 @@ process.once('uncaughtException', err => {
   console.error(err.message);
   console.error(err.stack);
 
-  process.exitCode = 2;
+  process.exitCode = 1;
 });
 
 const Command = require('..');
